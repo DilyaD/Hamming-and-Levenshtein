@@ -4,7 +4,7 @@
 #include <vector>
 
 template<typename L>
-typename T::size_type Levenshtein(const L &source,
+typename L::size_type Levenshtein(const L &source,
                                           const L &target) {
     if (source.size() > target.size()) {
         return Levenshtein(target, source);
